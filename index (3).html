@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Il Gori — Salsa bolognesa casera</title>
+<meta name="description" content="Salsa bolognesa casera Il Gori: aceite de oliva virgen extra, tomates italianos, carne 100% de res, vino tinto y vegetales. $12 la unidad, envío gratis en Samborondón.">
+<meta property="og:title" content="Il Gori — Salsa bolognesa casera">
+<meta property="og:description" content="La bolognesa de casa, lista para tu pasta. $12 la unidad · 2 por $22 · Envío gratis en Samborondón.">
+<meta property="og:image" content="https://ilgori.github.io/ilgori/og.jpg">
+<meta property="og:url" content="https://ilgori.github.io/ilgori/">
+<link rel="canonical" href="https://ilgori.github.io/ilgori/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#682629">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root{--vino:#682629;--ink:#1F1A17;--txt:#4A423D;--muted:#5C534D;--crema:#FBF7F2;--linea:#E8DED3;--verde:#2F5D3A;--verde-bg:#E6EEE4}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--crema);font-family:Inter,system-ui,sans-serif;color:var(--ink)}
+a{color:var(--vino)}a:hover{color:#4A1A1C}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--verde);outline-offset:2px}
+img{max-width:100%}
+.serif{font-family:'DM Serif Display',Georgia,serif;font-weight:400}
+.wrap{max-width:1160px;margin:0 auto;padding-left:24px;padding-right:24px}
+.btn{color:#fff;background:var(--vino);text-decoration:none;font-weight:600;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:14px 24px;font-size:16px}
+.btn:hover{color:#fff;background:#4A1A1C}
+.btn-lg{min-height:52px;padding:16px 28px;font-size:17px}
+.btn-sm{min-height:44px;padding:12px 20px;font-size:15px}
+header{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding-top:24px;padding-bottom:24px}
+header img{height:108px;width:auto;display:block}
+nav{display:flex;flex-wrap:wrap;gap:24px;align-items:center;font-size:15px;font-weight:500}
+nav a.plain{color:var(--ink);text-decoration:none}
+.hero{position:relative;isolation:isolate;display:flex;flex-wrap:wrap;gap:56px;align-items:center;padding-top:48px;padding-bottom:80px}
+.hero::before{content:"";position:absolute;inset:0;background:url(logo.png) center/min(860px,92%) auto no-repeat;opacity:.07;z-index:-1;pointer-events:none}
+.hero-txt{flex:1 1 460px;min-width:0;display:flex;flex-direction:column;gap:24px}
+.badge{align-self:flex-start;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--verde);background:var(--verde-bg);padding:8px 14px;border-radius:999px}
+.lema{font-style:italic;font-size:26px;line-height:1;color:var(--vino)}
+h1{margin:0;font-size:clamp(44px,6vw,76px);line-height:1.02;letter-spacing:-.01em}
+h1 em{color:var(--vino)}
+.lead{margin:0;font-size:19px;line-height:1.55;color:var(--txt);max-width:520px}
+.hero-img{flex:1 1 380px;min-width:0;display:flex;justify-content:center}
+.hero-img img{width:100%;max-width:520px;height:auto;display:block}
+h2{margin:0;font-size:clamp(34px,4vw,48px);line-height:1.1}
+.band{background:#fff;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.sec{padding-top:80px;padding-bottom:80px;display:flex;flex-direction:column;gap:40px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.step{display:flex;flex-direction:column;gap:12px;padding:28px;border-radius:20px;background:var(--crema)}
+.step .n{font-size:40px;line-height:1;color:var(--vino)}
+h3{margin:0;font-size:20px;font-weight:600}
+.step p,.faq p{margin:0;font-size:16px;line-height:1.55;color:var(--txt)}
+.prod{display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start;padding-top:80px;padding-bottom:80px}
+.prod-info{flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.prod-info>p{margin:0;font-size:18px;line-height:1.6;color:var(--txt)}
+.checks{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px;font-size:16px}
+.checks li{display:flex;gap:12px;align-items:center}
+.checks svg{flex:none}
+.card{flex:1 1 320px;min-width:0;max-width:420px;display:flex;flex-direction:column;gap:16px;padding:32px;border-radius:24px;background:#fff;border:1px solid var(--linea)}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.price{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.price .v{font-size:44px;line-height:1}
+.price .u{font-size:16px;color:var(--muted)}
+.card>p{margin:0;font-size:15px;line-height:1.55;color:var(--txt)}
+.promo{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px 16px;border-radius:14px;border:2px solid var(--vino);background:var(--crema)}
+.promo .t{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--vino)}
+.promo .o{font-size:17px;font-weight:600}
+.promo .s{font-size:14px;font-weight:600;color:#fff;background:var(--vino);padding:6px 12px;border-radius:999px}
+.envio{margin:0;display:flex;gap:10px;align-items:center;font-size:15px;font-weight:600;color:var(--verde);background:var(--verde-bg);padding:10px 14px;border-radius:12px}
+.faq-wrap{max-width:860px;gap:32px}
+.faq{display:flex;flex-direction:column;gap:12px}
+details{border:1px solid var(--linea);border-radius:16px;padding:4px 20px;background:var(--crema)}
+summary{cursor:pointer;font-size:18px;font-weight:600;padding:16px 0;min-height:44px}
+details p{margin:0 0 18px!important}
+.reg{background:var(--vino);color:#fff}
+.reg-in{padding-top:88px;padding-bottom:88px;display:flex;flex-wrap:wrap;gap:48px;align-items:center}
+.reg-txt{flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:16px}
+.reg-txt h2{font-size:clamp(36px,4.5vw,56px);line-height:1.05}
+.reg-txt p{margin:0;font-size:18px;line-height:1.55;color:#FBEAE6;max-width:460px}
+.reg-card{flex:1 1 420px;min-width:0;background:#fff;color:var(--ink);border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:20px}
+.reg-card h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:30px;line-height:1.15}
+.reg-card p{margin:0;font-size:16px;line-height:1.55;color:var(--txt)}
+.reg-card .alt{color:var(--ink);font-weight:500;font-size:15px;min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+footer{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;font-size:14px;color:var(--muted);border-top:1px solid #888888;padding-top:40px;padding-bottom:40px}
+footer img{height:108px;width:auto;display:block}
+.foot-r{display:flex;flex-wrap:wrap;gap:20px;align-items:center}
+.ig{color:var(--ink);font-weight:600;min-height:44px;display:inline-flex;align-items:center;gap:8px}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+<img src="logo.png" alt="Il Gori — Dalla nostra cucina" width="144" height="108">
+<nav>
+<a class="plain" href="#como-funciona">Cómo funciona</a>
+<a class="plain" href="#producto">El frasco</a>
+<a class="plain" href="#preguntas">Preguntas</a>
+<a class="btn btn-sm" href="https://wa.me/593968009100?text=Hola%20Il%20Gori%20%F0%9F%91%8B%20Quiero%20pedir%20salsa%20bolognesa.%20%C2%BFCu%C3%A1ntos%20frascos%20tienen%20disponibles%20y%20qu%C3%A9%20d%C3%ADa%20pueden%20entregar%3F" target="_blank" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>Pedir por WhatsApp</a>
+</nav>
+</header>
+
+<main>
+<section class="wrap hero">
+<div class="hero-txt">
+<span class="badge">Hecha en casa · Envío gratis en Samborondón</span>
+<span class="serif lema">Dalla nostra cucina</span>
+<h1 class="serif">La bolognesa de casa, <em>lista para tu pasta.</em></h1>
+<p class="lead">Descongela, calienta y sirve. Pídela por WhatsApp y te la llevamos a casa.</p>
+<div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center">
+<a class="btn btn-lg" href="https://wa.me/593968009100?text=Hola%20Il%20Gori%20%F0%9F%91%8B%20Quiero%20pedir%20salsa%20bolognesa.%20%C2%BFCu%C3%A1ntos%20frascos%20tienen%20disponibles%20y%20qu%C3%A9%20d%C3%ADa%20pueden%20entregar%3F" target="_blank" rel="noopener"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>Pedir por WhatsApp</a>
+<a href="#como-funciona" style="color:var(--ink);font-weight:500;padding:12px 4px;min-height:44px;display:inline-flex;align-items:center">Ver cómo funciona</a>
+</div>
+</div>
+<div class="hero-img">
+<img src="frascos.webp" alt="Dos frascos de salsa bolognesa Il Gori con su etiqueta" width="520" height="467">
+</div>
+</section>
+
+<section id="como-funciona" class="band">
+<div class="wrap sec">
+<h2 class="serif">Cómo funciona</h2>
+<div class="steps">
+<div class="step"><span class="serif n">1</span><h3>Nos escribes por WhatsApp</h3><p>Toca «Pedir por WhatsApp» y dinos cuántos frascos quieres.</p></div>
+<div class="step"><span class="serif n">2</span><h3>Coordinamos la entrega</h3><p>Te confirmamos disponibilidad y el día en que llega tu pedido.</p></div>
+<div class="step"><span class="serif n">3</span><h3>La recibes en casa</h3><p>Te la llevamos a domicilio. El envío es gratis dentro de Samborondón y cuesta $2 fuera de Samborondón.</p></div>
+</div>
+</div>
+</section>
+
+<section id="producto" class="wrap prod">
+<div class="prod-info">
+<h2 class="serif">El frasco</h2>
+<p>Hecha con ingredientes naturales y de alta calidad, como la prepararías en casa.</p>
+<ul class="checks">
+<li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2F5D3A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Aceite de oliva virgen extra</li>
+<li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2F5D3A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Tomates italianos</li>
+<li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2F5D3A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Carne 100% de res</li>
+<li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2F5D3A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Vino tinto y vegetales</li>
+<li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2F5D3A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Se entrega congelada. Una vez abierta y descongelada, no volver a congelar.</li>
+</ul>
+</div>
+<div class="card">
+<span class="eyebrow">Il Gori · Salsa bolognesa</span>
+<div class="price"><span class="serif v">$12</span><span class="u">la unidad</span></div>
+<p>Rinde para 4 porciones de pasta.</p>
+<div class="promo">
+<div style="display:flex;flex-direction:column;gap:2px"><span class="t">Promo</span><span class="o">2 frascos por $22</span></div>
+<span class="s">Ahorras $2</span>
+</div>
+<p class="envio"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2F5D3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>Envío a domicilio gratis dentro de Samborondón</p>
+<a class="btn" href="https://wa.me/593968009100?text=Hola%20Il%20Gori%20%F0%9F%91%8B%20Quiero%20pedir%20salsa%20bolognesa.%20%C2%BFCu%C3%A1ntos%20frascos%20tienen%20disponibles%20y%20qu%C3%A9%20d%C3%ADa%20pueden%20entregar%3F" target="_blank" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>Pedir por WhatsApp</a>
+</div>
+</section>
+
+<section id="preguntas" class="band" style="border-bottom:0">
+<div class="wrap sec faq-wrap">
+<h2 class="serif">Preguntas frecuentes</h2>
+<div class="faq">
+<details><summary>¿Cuánto dura la salsa?</summary><p>Hasta 3 meses en el congelador. Una vez abierta y descongelada, no la vuelvas a congelar.</p></details>
+<details><summary>¿Cómo la descongelo y la caliento?</summary><p>Saca el frasco del congelador y déjalo 1 hora a temperatura ambiente. Después caliéntalo a baño maría y sírvela sobre tu pasta.</p></details>
+<details><summary>¿Cuándo me llega el pedido?</summary><p>El mismo día si hay frascos disponibles; si no, al día siguiente.</p></details>
+<details><summary>¿Cómo puedo pagar?</summary><p>Por transferencia o en efectivo.</p></details>
+<details><summary>¿Entregan fuera de Samborondón?</summary><p>Sí. Dentro de Samborondón el envío es gratis; fuera de Samborondón cuesta $2.</p></details>
+</div>
+</div>
+</section>
+
+<section id="registro" class="reg">
+<div class="wrap reg-in">
+<div class="reg-txt">
+<h2 class="serif">¿No quieres pedir todavía?</h2>
+<p>Déjanos tus datos y te avisamos de promociones y nuevos lotes. Sin spam, solo salsa.</p>
+</div>
+<div class="reg-card">
+<h3>Únete a la lista de Il Gori</h3>
+<p>Solo te pedimos tu nombre y WhatsApp. Te toma menos de un minuto.</p>
+<a class="btn btn-lg" href="https://docs.google.com/forms/d/1L8veWVEjyUOznt922RLXyDYtZYbV870eHlv9KpbqqT8/viewform" target="_blank" rel="noopener">Registrarme</a>
+<a class="alt" href="https://wa.me/593968009100?text=Hola%20Il%20Gori%20%F0%9F%91%8B%20Quiero%20pedir%20salsa%20bolognesa.%20%C2%BFCu%C3%A1ntos%20frascos%20tienen%20disponibles%20y%20qu%C3%A9%20d%C3%ADa%20pueden%20entregar%3F" target="_blank" rel="noopener">¿Quieres pedir ya? Escríbenos por WhatsApp</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="wrap">
+<img src="logo.png" alt="Il Gori" width="144" height="108" loading="lazy">
+<div class="foot-r">
+<div style="display:flex;flex-direction:column;gap:2px">
+<a class="ig" href="https://instagram.com/illgori.ec" target="_blank" rel="noopener"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8"/></svg>@illgori.ec</a>
+<span>¡Síguenos en Instagram!</span>
+</div>
+<span>Hecha en Guayaquil, Ecuador</span>
+</div>
+</footer>
+
+</body>
+</html>
